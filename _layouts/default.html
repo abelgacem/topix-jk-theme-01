@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- html.head -->
 {%- include default.head.html -%}
 <body>
-    <!-- Page content -->
-    {{ content }}
+  
+  <!-- md.content -->
+  {{ content }}   
 
-    <!-- Optional additional JS (if needed) -->
-    <script src="{{ '/assets/js/extra.js' | relative_url }}"></script>
+  <!-- site.footer -->
+  {%- include default.footer.html -%}
+
+  <!-- Optional additional JS (if needed) -->
+  <script src="{{ '/assets/js/extra.js' | relative_url }}"></script>
 </body>
+
 </html>
 
