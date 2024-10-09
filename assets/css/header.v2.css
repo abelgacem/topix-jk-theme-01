@@ -10,3 +10,19 @@ nav ul li {
   display: inline;
   margin-right: 10px;
 }
+
+/* Positioning navigation sections */
+.nav-left {
+  flex: 1;
+  text-align: left;
+}
+
+.nav-center {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-right {
+  flex: 1;
+  text-align: right;
+}
