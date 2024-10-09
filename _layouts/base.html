@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- html.head -->
+{%- include base.head.html -%}
+<body>
+  
+  <!-- site.header -->
+  {%- include base.site.header.html -%}
+
+  <!-- md.content -->
+  {{ content }}   
+
+  <!-- site.footer -->
+  {%- include base.site.footer.html -%}
+
+  <!-- Optional additional JS (if needed) -->
+  <script src="{{ '/assets/js/extra.js' | relative_url }}"></script>
+</body>
+
+</html>
+
