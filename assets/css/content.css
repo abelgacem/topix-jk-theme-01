@@ -4,23 +4,23 @@ b, strong {
     color: orangered;
     }
 
-i, em {
+/* i, em {
     color: olive;
-}
+} */
  
-code  {
+/* code  {
     color: none;
-}    
+}     */
 
 /* table, th, td {
     border: 1px solid;
 } */
 
-main {
+/* main {
     flex: 1;
     padding: 20px;
     background-color: #f4f4f4;
-}
+} */
 
 /* ul {
     margin-left: 10px;
