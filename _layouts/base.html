@@ -4,8 +4,8 @@
 <head>
   {%- include base.head.meta.html -%}
   <title>{{ page.title | split: '/' | slice: -2, 1 }}</title>
-  {%- include base.head.other.html -%}
-  {%- include base.head.framework.html -%}
+  {%- include base.head.other.local.html -%}
+  {%- include base.head.other.cdn.html -%}
 </head>
 <body>
   <p>layout theme:base</p>
