@@ -4,6 +4,8 @@
 
 $(document).ready(function() {
   $('.sortable').each(function() {
-    $(this).DataTable();
+    $(this).DataTable(
+      {pageLength: 50}
+    );
   });
 });
