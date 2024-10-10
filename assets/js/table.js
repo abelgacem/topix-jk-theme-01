@@ -5,7 +5,7 @@
 $(document).ready(function() {
   $('.sortable').each(function() {
     $(this).DataTable(
-      {pageLength: 50}
+      {paging: false}
     );
   });
 });

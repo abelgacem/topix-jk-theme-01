@@ -1,16 +1,21 @@
-
+# name@section
 introduction: "Introduction"
 definition:   "Definition"
 description:  "Description"
 purpose:      "Purpose"
 requirement:  "Requirement"
 reference:    "Reference"
-# name
+
+# name@common
+docusaurus:   " `Docusaurus.` "
+html:         " `HTML.` "
+hugo:         " `Hugo` "
+jekyll:       " `Jekyll` "
+git:          " `Git` "
 liquid:       " `Liquid.` "
 markdown:     " `Markdown.` "
 yaml:         " `YAML.` "
-html:         " `HTML.` "
-# short
+# name@expression
 kvpair:       "key value pairs"
 sdef:         "define by the system"
 udef:         "define by the user"
