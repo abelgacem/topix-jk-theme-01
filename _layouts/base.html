@@ -4,16 +4,15 @@
 <head>
   {%- include base.head.meta.html -%}
   <title>{{ page.title | split: '/' | slice: -2, 1 }}</title>
-  {%- include base.head.other.local.html -%}
-  {%- include base.head.other.cdn.html -%}
+  {%- include base.head.local.html -%}
+  {%- include base.head.cdn.html -%}
 </head>
 <body>
-  <p>layout theme:base</p>
   <!-- site.header -->
   {%- include base.site.header.html -%}
 
-  <!-- md.content -->
-  {{ content }}   
+  <!-- site.page.content -->
+  {%- include base.site.content.html -%}
 
   <!-- site.footer -->
   {%- include base.site.footer.html -%}
