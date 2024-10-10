@@ -1,7 +1,7 @@
 <nav aria-label="breadcrumb">
   <ul class="breadcrumb">
     <li><a href="/">Home</a></li>
-    <li><a href="#">{{page.mx}}</a></li>
-    <li>Current Page</li>
+    <li>{{ site.mx.domain}}</li>
+    <li>{{ page.path | split: "/" | slice: 1, 1 | first | downcase | strip % }}</li>
   </ul>
 </nav>
