@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- html.head -->
-{%- include base.head.html -%}
+<head>
+  {%- include base.head.meta.html -%}
+  <title>{{ page.title | split: '/' | slice: -2, 1 }}</title>
+  {%- include base.head.other.html -%}
+  {%- include base.head.framework.html -%}
+</head>
 <body>
   <p>layout theme:base</p>
   <!-- site.header -->
