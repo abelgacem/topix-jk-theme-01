@@ -1,3 +1,9 @@
+// $(document).ready(function() {
+//   $('#myTable').DataTable();
+// });
+
 $(document).ready(function() {
-  $('#myTable').DataTable();
+  $('.sortable').each(function() {
+    $(this).DataTable();
+  });
 });
