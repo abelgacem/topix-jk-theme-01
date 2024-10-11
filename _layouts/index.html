@@ -11,7 +11,10 @@
   {%- include base.site.header.html -%}
 
   <!-- site.page.content -->
-  {%- include base.site.content.html -%}
+  <main > 
+    {{ content }}   
+    {%- include base.site.content.list.html -%}
+  </main> 
 
   <!-- site.footer -->
   {%- include base.site.footer.html -%}
