@@ -16,6 +16,7 @@ layout: default
     <tr>
       <th translate='no'>topic</th>
       <th translate='no'>tag</th>
+      <th >description</th>
       <th>debug</th>
     </tr>
   </thead>
@@ -28,6 +29,7 @@ layout: default
   <tr>
     <td translate='no'><a href="/{{ lSTOPIC_PATH | remove: '.md' }}">{{ lSTOPIC_NAME }}</a></td>
     <td translate='no'>{{ lSTOPIC_TYPE }}</td>
+    <td>todo</td>
     <td>{{ lSTOPIC_PATH }} - {{ lSTOPIC_NAME }} - {{ lSTOPIC_FILE }}</td>
   </tr>
   {% endif %}

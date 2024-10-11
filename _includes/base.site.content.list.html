@@ -1,13 +1,14 @@
-<h1> {{ site.data.name.list }} </h1>
+<!-- define var -->
+{% assign lLIST_TOPIC  = site.pages %}
 
+<h1> {{ site.data.name.list }} </h1>
 
 <table class="sortable">
   <thead>
     <tr>
-      <th>project name</th>
+      <th>name</th>
       <th translate='no'>tag</th>
       <th>description</th>
-      <th>path</th>
       <th>debug</th>
     </tr>
   </thead>
@@ -22,8 +23,7 @@
         <td translate='no'><a href="{{ lTOPIC.path | remove: '.md' }}">{{ lTOPIC_NAME }}</a></td>
         <td translate='no'>{{ lTOPIC.mx.domain }}</td>
         <td>{{ lTOPIC.mx.description }}</td>
-        <td>{{ lTOPIC.path }}</td>
-        <td>{{ lTOPIC_DEPTH }} - {{ lTOPIC_NAME }} - {{ lTOPIC_TYPE }} - {{ lTOPIC_FILE }} </td>
+        <td>{{ lTOPIC.path }} - {{ lTOPIC_DEPTH }} - {{ lTOPIC_NAME }} - {{ lTOPIC_TYPE }} - {{ lTOPIC_FILE }} </td>
       </tr>
       {% endif %}
     {% endfor %}
