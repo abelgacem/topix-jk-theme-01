@@ -1,10 +1,16 @@
 # name@section
+#
 introduction: "Introduction"
 definition:   "Definition"
 description:  "Description"
 purpose:      "Purpose"
+#
+member:       "Member"
+list:         "List"
+#
 process:      "Process"
 requirement:  "Requirement"
+#
 reference:    "Reference"
 contributor:  "Contributor"
 
@@ -17,6 +23,7 @@ git:          " `Git` "
 liquid:       " `Liquid` "
 markdown:     " `Markdown` "
 yaml:         " `YAML.` "
+
 # name@expression
 kvpair:       "key value pairs"
 sdef:         "define by the system"
