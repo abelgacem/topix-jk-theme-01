@@ -4,7 +4,16 @@
         <li><a href="/">Home</a></li>
     </ul>
     <ul class="nav-center">
-      <li><a href="#">Domain</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="domainDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Domain
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="domainDropdown">
+          <li><a class="dropdown-item" href="#">Domain 1</a></li>
+          <li><a class="dropdown-item" href="#">Domain 2</a></li>
+          <li><a class="dropdown-item" href="#">Domain 3</a></li>
+        </ul>
+      </li>
       <li><a href="#">IT</a></li>
       <li><a href="#">Psychology</a></li>
       <li><a href="#">Math</a></li>
@@ -15,4 +24,5 @@
         <li><a href="#">Contact</a></li>
     </ul>
   </nav>
+  <span class='tagline'>The documentation hub</span>
 </header>
