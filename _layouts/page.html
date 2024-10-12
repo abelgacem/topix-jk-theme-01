@@ -9,7 +9,7 @@ layout: default
 {% assign lTOPIC_NAME    = page.dir  | split: "/"  | slice: 2, 1 | first | downcase | strip %}
 {% assign lTOPIC_FOLDER  = 'list/' | append: lTOPIC_NAME %}
 
-<h1> {{ site.data.name.reference }} </h1>
+<h1> {{ site.data.name.list }} of topics </h1>
 
 <table class="sortable">
   <thead>
@@ -29,8 +29,8 @@ layout: default
   <tr>
     <td translate='no'><a href="/{{ lSTOPIC_PATH | remove: '.md' }}">{{ lSTOPIC_NAME }}</a></td>
     <td translate='no'>{{ lSTOPIC_TYPE }}</td>
-    <td>todo</td>
-    <td>{{ lSTOPIC_PATH }} - {{ lSTOPIC_NAME }} - {{ lSTOPIC_FILE }}</td>
+    <td>{{ lTOPIC.mx.description }}</td>
+    <td>{{lTOPIC_NAME}} - {{lTOPIC_FOLDER}} - {{ lSTOPIC_PATH }} - {{ lSTOPIC_NAME }} - {{ lSTOPIC_FILE }}</td>
   </tr>
   {% endif %}
   {% endfor %}
