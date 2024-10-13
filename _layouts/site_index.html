@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {%- include base.head.meta.html -%}
+  <title>{{ page.title | split: '/' | slice: -2, 1 }}</title>
+  {%- include base.head.asset.html -%}
+</head>
+<body>
+  <!-- site.header -->
+  {%- include base.site.header.html -%}
+
+  <!-- site.page.content -->
+  <main > 
+    {{ content }}   
+    {%- include base.site.list.subdomain.html -%}
+  </main> 
+
+  <!-- site.footer -->
+  {%- include base.site.footer.html -%}
+
+  <!-- Optional additional JS (if needed) -->
+  <script src="{{ '/assets/js/table.js' | relative_url }}"></script>
+</body>
+
+</html>
+
