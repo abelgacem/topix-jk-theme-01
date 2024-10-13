@@ -3,7 +3,7 @@
     <li><a href="/" translate='no'>Home</a></li>
     <li translate='no'>{{ site.mx.domain  }}</li>
     <li translate='no'>{{ page.collection }}</li>
-    <li translate='no'>{{ page.path | split '/' | slice 3,1 | first }} ({{ page.mx.description }})</li>
+    <li translate='no'>{{ page.path | split '/' | slice 3,1 | first | capitalize | strip}} ({{ page.mx.description }})</li>
   </ul>
 </nav>
 
