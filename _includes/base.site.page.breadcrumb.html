@@ -1,9 +1,16 @@
+<!-- define var -->
+{% assign lTOPIC_DOMAIN   =  site.mx.domain  %} 
+{% assign lTOPIC_SDOMAIN  =  page.collection  %} 
+{% assign lTOPIC_NAME     =  page.path | split: '/' | slice: 2, 1 | first | capitalize | strip  %} 
+{% assign lTOPIC_DESC     =  page.mx.description  %} 
+
+<!-- code -->
 <nav aria-label="breadcrumb">
   <ul class="breadcrumb">
     <li><a href="/" translate='no'>Home</a></li>
-    <li translate='no'>{{ site.mx.domain  }}</li>
-    <li translate='no'>{{ page.collection }}</li>
-    <li translate='no'>{{ page.path | split: '/' | slice: 2, 1 | first | capitalize | strip }} ({{ page.mx.description }})</li>
+    <li translate='no'>{{ lTOPIC_DOMAIN  }}</li>
+    <li translate='no'>{{ lTOPIC_SDOMAIN }}</li>
+    <li translate='no'>{{ lTOPIC_NAME }} ({{ lTOPIC_DESC }})</li>
   </ul>
 </nav>
 
