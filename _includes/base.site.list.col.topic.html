@@ -1,0 +1,11 @@
+<!-- define var -->
+
+<h1>Browse topics</h1>
+
+<ul>
+  {% for item in site[page.collection] %}
+    <li>
+      <a href="{{ item.url }}">{{ item.title }} - {{ item.path }} </a>
+    </li>
+  {% endfor %}
+</ul>
