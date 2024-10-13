@@ -7,7 +7,7 @@
   <div class="col-6 col-md-3 text-center mb-4">
   <div class="icon-container">
   <a href="{{ site.baseurl }}/{{ collection.label }}/index.html">
-  <img src="{{ collection.icon }}" alt="{{ collection.label }} icon" class="img-fluid" style="width: 100px; height: 100px;">
+  <img src="{{ '/assets/icons/' | append: collection.label | append: '.svg' }}" alt="{{ collection.label }} icon" class="img-fluid" style="width: 100px; height: 100px;">
   <p class="mt-2">{{ collection.label | capitalize }}</p>
   </a>
   </div>
@@ -16,8 +16,10 @@
 {% endfor %}
 </div>
 </div> 
-  
-
+<!--   
+<img src="{{ collection.icon }}"                                              alt="{{ collection.label }} icon" class="img-fluid" style="width: 100px; height: 100px;">
+<img src="{{ '/assets/icons/' | append: collection.label | append: '.svg' }}" alt="{{ collection.label }} icon" class="img-fluid" style="width: 100px; height: 100px;">
+ -->
 
 
 <!-- <h1>Browse by categories</h1>
