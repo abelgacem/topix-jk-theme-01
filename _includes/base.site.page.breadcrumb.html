@@ -2,6 +2,7 @@
 {% assign lTOPIC_DOMAIN   =  site.mx.domain  %} 
 {% assign lTOPIC_SDOMAIN  =  page.collection  %} 
 {% assign lTOPIC_NAME     =  page.path | split: '/' | slice: 2, 1 | first | capitalize | strip  %} 
+{% assign lTOPIC_TYPE     =  page.path | split: '/' | slice: 3, 1 | first  | strip  %} 
 {% assign lTOPIC_DESC     =  page.mx.description  %} 
 
 <!-- code -->
@@ -10,6 +11,7 @@
     <li><a href="/" translate='no'>Home</a></li>
     <li translate='no'>{{ lTOPIC_DOMAIN  }}</li>
     <li translate='no'><a href='/{{ lTOPIC_SDOMAIN }}/index.html'>{{ lTOPIC_SDOMAIN }}<a></li>
+    <li>{{ lTOPIC_TYPE }}</li>
     <li translate='no'>{{ lTOPIC_NAME }} ({{ lTOPIC_DESC }})</li>
   </ul>
 </nav>
