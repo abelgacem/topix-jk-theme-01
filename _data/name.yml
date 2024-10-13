@@ -17,6 +17,7 @@ contributor:  "Contributor"
 # name@common
 docusaurus:   " `Docusaurus` "
 html:         " `HTML.` "
+gui:          " `GUI.` "
 hugo:         " `Hugo` "
 jekyll:       " `Jekyll` "
 git:          " `Git` "
@@ -30,3 +31,4 @@ sdef:         "define by the system"
 udef:         "define by the user"
 ie:           "ie."
 eg:           "eg."
+
