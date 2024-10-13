@@ -1,7 +1,43 @@
 <!-- define var -->
-{% assign lLIST_TOPIC  = site.pages %}
 
-<h1> {{ site.data.name.list }} of topics</h1>
+<h1>Browse by categories</h1>
+
+<div class="container">
+<div class="row">
+{% for collection in site.collections %}
+{% unless collection.label == "posts" %}
+  <div class="col-6 col-md-3 text-center mb-4">
+  <div class="icon-container">
+  <a href="{{ site.baseurl }}/{{ collection.label }}/index.html">
+  <img src="{{ collection.icon }}" alt="{{ collection.label }} icon" class="img-fluid" style="width: 100px; height: 100px;">
+  <p class="mt-2">{{ collection.label | capitalize }}</p>
+  </a>
+  </div>
+  </div>
+{% endunless %}
+{% endfor %}
+</div>
+</div> 
+  
+
+
+
+<!-- <h1>Browse by categories</h1>
+
+{% for collection in site.collections %}
+{% unless collection.label == "posts" %}
+<li>
+<img src="{{ collection.icon }}" alt="{{ collection.label }} icon" style="width: 20px; height: 20px;"/>
+<a href="{{ site.baseurl }}/{{ collection.label }}/index.html">{{ collection.label | capitalize }}</a>
+</li>
+{% endunless %}
+{% endfor %}
+ -->
+
+
+
+<!-- 
+
 
 <table class="sortable">
   <thead>
@@ -28,4 +64,4 @@
       {% endif %}
     {% endfor %}
   </tbody>
-</table>
+</table> -->
