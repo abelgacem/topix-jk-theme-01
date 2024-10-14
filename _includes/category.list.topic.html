@@ -20,7 +20,7 @@
 {% assign lSTOPIC_TYPE = lFILE.path | split: '/' | slice: 3, 1 | first | downcase | strip %}
 {% assign lFILE_EXPECTED = lTOPIC_NAME | append: '.md' %}
 {% unless lFILE.name == 'index.md' and lFILE_DEPTH == 0  %} 
-{% if  lFILE_DEPTH ==2  or lSTOPIC_TYPE == 'whatis' and lFILE.name == lFILE_EXPECTED %}
+{% if  lFILE_DEPTH == 2  or lSTOPIC_TYPE == 'whatis' and lFILE.name == lFILE_EXPECTED %}
   <tr>
     <td translate='no'><a href='{{ lFILE.url }}'>{{lTOPIC_NAME}}</a></td>
     <td translate='no'>{{ lFILE.mx.tag }}</td>
