@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-  {%- include base.head.meta.html -%}
+  {%- include site.head.meta.html -%}
   <title>{{ page.title | split: '/' | slice: -2, 1 }}</title>
-  {%- include base.head.asset.html -%}
+  {%- include site.head.asset.html -%}
 </head>
 <body>
   <!-- site.header -->
-  {%- include base.site.header.html -%}
+  {%- include site.header.html -%}
 
   <!-- site.page.content -->
   <main > 
@@ -17,7 +17,7 @@
   </main> 
 
   <!-- site.footer -->
-  {%- include base.site.footer.html -%}
+  {%- include site.footer.html -%}
 
   <!-- Optional additional JS (if needed) -->
   <script src="{{ '/assets/js/table.js' | relative_url }}"></script>
