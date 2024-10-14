@@ -3,7 +3,7 @@
 {% assign lTOPIC_CATEGORY    =  page.collection  %} 
 {% assign lTOPIC_NAME        =  page.path | split: '/' | slice: 2, 1 | first | capitalize | strip  %} 
 {% assign lSTOPIC_CLASSIFIER =  page.path | split: '/' | slice: 3, 1 | first  | strip  %} 
-
+{{ assign lSTOPIC_NAME       =  page.path | split: '/' | last | remove: '.md' }}
 <!-- code -->
 <nav aria-label="breadcrumb">
   <ul class="breadcrumb">
@@ -11,8 +11,8 @@
     <li translate='no'>{{ lTOPIC_DOMAIN  }}</li>
     <li translate='no'><a href='/{{ lTOPIC_CATEGORY }}/index.html'>{{ lTOPIC_CATEGORY }}<a></li>
     <li>{{ lTOPIC_NAME }} (topic name)</li>
-    <li>{{ lSTOPIC_CLASSIFIER }} (stopic classifier)</li>
-    <li translate='no'>{{ lSTOPIC_NAME }} (stopic name todo)</li>
+    <li>{{ lSTOPIC_CLASSIFIER }} </li>
+    <li translate='no'>{{ lSTOPIC_NAME }}</li>
   </ul>
 </nav>
 
