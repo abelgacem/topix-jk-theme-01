@@ -10,15 +10,11 @@
   <!-- site.header -->
   {%- include base.site.header.html -%}
 
-  <!-- site.breadcrumb -->
-  {%- include base.site.col.breadcrumb.html -%}
-
   <!-- site.page.content -->
   <main > 
     {{ content }}   
-    {%- include base.site.list.col.topic.html -%}
+    {%- include domain.list.category.html -%}
   </main> 
-   
 
   <!-- site.footer -->
   {%- include base.site.footer.html -%}
