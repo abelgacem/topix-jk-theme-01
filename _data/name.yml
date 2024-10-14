@@ -17,6 +17,7 @@ reference:    "Reference"
 contributor:  "Contributor"
 
 # name@common
+vscode:       " `VSCode` "
 anthora:      " `Anthora` "
 docusaurus:   " `Docusaurus` "
 html:         " `HTML.` "
@@ -40,5 +41,6 @@ sdef:         "define by the system"
 udef:         "define by the user"
 #
 ie:           "ie."
+etc:          "etc."
 eg:           "eg."
 
