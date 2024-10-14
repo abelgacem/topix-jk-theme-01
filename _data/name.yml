@@ -5,6 +5,8 @@ definition:   "Definition"
 description:  "Description"
 purpose:      "Purpose"
 #
+improvement:  "Improvement"
+#
 member:       "Member"
 list:         "List"
 #
