@@ -15,6 +15,7 @@ reference:    "Reference"
 contributor:  "Contributor"
 
 # name@common
+anthora:      " `Anthora` "
 docusaurus:   " `Docusaurus` "
 html:         " `HTML.` "
 gui:          " `GUI.` "
@@ -25,10 +26,15 @@ liquid:       " `Liquid` "
 markdown:     " `Markdown` "
 yaml:         " `YAML.` "
 
-# name@expression
+# name@acronym
 kvpair:       "key value pairs"
+kpi:          "key process indicators"
+poc:          "proof of concepts"
+
+# name@expression
 sdef:         "define by the system"
 udef:         "define by the user"
+#
 ie:           "ie."
 eg:           "eg."
 
