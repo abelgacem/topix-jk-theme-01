@@ -18,6 +18,10 @@ reference:    "Reference"
 contributor:  "Contributor"
 
 # name@common
+## domain
+math:         "Mathematics"
+it:           "IT."
+## tool
 vscode:       " `VSCode` "
 anthora:      " `Anthora` "
 docusaurus:   " `Docusaurus` "
