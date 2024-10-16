@@ -6,6 +6,7 @@ definition:   "Definition"
 description:  "Description"
 purpose:      "Purpose"
 todo:         "TODO"
+toknow:       "Good to know"
 ##
 improvement:  "Improvement"
 ##
