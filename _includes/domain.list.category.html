@@ -1,18 +1,19 @@
+<!-- deine var  -->
+{%- include lib.get.list.category.html -%} 
 <h1>Browse by categories</h1>
 
 <div class="container">
 <div class="row">
-{% for collection in site.collections %}
-{% unless collection.label == "posts" %}
+  
+{% for lCATEGORY_NAME in gvLIST_CATEGORY %}
   <div class="col-6 col-md-3 text-center mb-4">
   <div class="icon-container">
-  <a href="{{ site.baseurl }}/{{ collection.label }}/index.html">
-  <img src="{{ '/assets/icons/' | append: collection.label | append: '.svg' }}" alt="{{ collection.label }} icon" class="img-fluid" style="width: 100px; height: 100px;">
-  <p class="mt-2">{{ collection.label | capitalize }}</p>
+  <a href="{{ site.baseurl }}/{{ lCATEGORY_NAME }}/index.html">
+  <img src="{{ '/assets/icons/' | append: lCATEGORY_NAME | append: '.svg' }}" alt="{{ lCATEGORY_NAME }} icon" class="img-fluid" style="width: 100px; height: 100px;">
+  <p class="mt-2">{{ lCATEGORY_NAME | capitalize }}</p>
   </a>
   </div>
   </div>
-{% endunless %}
 {% endfor %}
 </div>
 </div> 
