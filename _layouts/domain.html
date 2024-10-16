@@ -2,21 +2,11 @@
 layout: base
 ---
 
-<body>
-  <!-- site.header -->
-  {%- include site.header.html -%}
+<!-- site.page.content -->
+<main > 
+  {{ content }}   
+  {%- include domain.list.category.html -%}
+</main> 
 
-  <!-- site.page.content -->
-  <main > 
-    {{ content }}   
-    {%- include domain.list.category.html -%}
-  </main> 
 
-  <!-- site.footer -->
-  {%- include site.footer.html -%}
-
-  <!-- Optional additional JS (if needed) -->
-  <script src="{{ '/assets/js/table.js' | relative_url }}"></script>
-</body>
-</html>
 

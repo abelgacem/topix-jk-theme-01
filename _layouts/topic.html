@@ -2,26 +2,11 @@
 layout: base
 ---
 
-<body>
-  <!-- site.header -->
-  {%- include site.header.html -%}
+<!-- site.breadcrumb -->
+{%- include breadcrumb.topic.html -%}
 
-  <!-- site.breadcrumb -->
-  {%- include breadcrumb.topic.html -%}
-
-  <!-- site.page.content -->
-  <main > 
-    {{ content }}   
-    {%- include topic.list.stopic.html -%}
-  </main> 
-   
-
-  <!-- site.footer -->
-  {%- include site.footer.html -%}
-
-  <!-- Optional additional JS (if needed) -->
-  <script src="{{ '/assets/js/table.js' | relative_url }}"></script>
-</body>
-
-</html>
-
+<!-- site.page.content -->
+<main > 
+  {{ content }}   
+  {%- include topic.list.stopic.html -%}
+</main>    

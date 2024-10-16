@@ -6,6 +6,19 @@
   <title>{{ page.title | split: '/' | slice: -2, 1 }}</title>
   {%- include site.head.asset.html -%}
 </head>
+<body>
 {%- include base.varenv.html -%}
 
+<!-- site.header -->
+{%- include site.header.html -%}
+
 {{ content }}
+
+<!-- site.footer -->
+{%- include site.footer.html -%}
+
+<!-- Optional additional JS (if needed) -->
+<script src="{{ '/assets/js/table.js' | relative_url }}"></script>
+
+</body>
+</html>
