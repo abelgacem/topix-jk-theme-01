@@ -1,15 +1,6 @@
 ---
 layout: base
 ---
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  {%- include site.head.meta.html -%}
-  <title>{{ page.title | split: '/' | slice: -2, 1 }}</title>
-  {%- include site.head.asset.html -%}
-</head>
 <body>
   <!-- site.header -->
   {%- include site.header.html -%}
@@ -30,6 +21,5 @@ layout: base
   <!-- Optional additional JS (if needed) -->
   <script src="{{ '/assets/js/table.js' | relative_url }}"></script>
 </body>
-
 </html>
 
