@@ -2,13 +2,12 @@
 layout: base
 ---
 
+<!-- define varenv -->
+{%- include base.varenv.html -%}
+
 <!-- site.page.content -->
 <main > 
   {{ content }}   
   {%- include domain.list.category.html -%}
 </main> 
-
-
-{%- include base.varenv.html -%}
-{%- include debug.html -%}
 
