@@ -8,7 +8,7 @@
     <thead>
       <tr>
         <th>name</th>
-        <th>section</th>
+        <th>kind</th>
         <th>Description</th>
         <th>Path</th>
       </tr>
@@ -16,7 +16,7 @@
     <tbody>
       {% for lFILE in site[page.collection] %}
         {% assign lFILE_DEPTH        = lFILE.path | split: '/' | size | minus: 2 %}
-        {% assign lSTOPIC_CLASSIFIER = lFILE.path | split: '/' | slice: 3, 1 | first | downcase | strip %}
+        {% assign lSTOPIC_CLASSIFIER = lFILE.path | split: '/' | slice: 3, 1 | first | downcase | strip | remove: '.md' %}
         {% assign lTOPIC_EXPECTED    = '/' | append: lTOPIC_NAME | append: '/' %}
         
         {% unless lFILE.name == 'index.md' and lFILE_DEPTH == 0 %}
