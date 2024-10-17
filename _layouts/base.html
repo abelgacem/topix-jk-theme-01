@@ -20,11 +20,7 @@
 <!-- useful content -->
 {{ content }}
 
-yoyo = {{ page.list }}
-
 <!-- list -->
-{% if page.list == "domain" %}
-  {%- include list.category.html -%}
 {% elsif page.list == "category" %}
   {%- include list.topic.html -%}
 {% elsif page.list == "topic" %}
