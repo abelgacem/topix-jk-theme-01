@@ -9,9 +9,8 @@
     <tr>
       <th translate='no'>name</th>
       <th translate='no'>kind</th>
-      <th translate='no'>tag</th>
       <th >description</th>
-      {%- comment -%} <th>debug</th> {%- endcomment -%}
+      <th>debug</th>
     </tr>
   </thead>
   <tbody>
@@ -26,9 +25,8 @@
   <tr>
     <td translate='no'><a href='{{ lFILE.url }}'>{{lTOPIC_NAME}}</a></td>
     <td >{{lSTOPIC_CLASSIFIER}}</a></td>
-    <td translate='no'>{{ lFILE.mx.tag }}</td>
     <td>{{ lFILE.mx.description }}</td>
-    {%- comment -%} <td><li>depth = {{lFILE_DEPTH}} | title = {{ lFILE.title }} | type = {{lSTOPIC_CLASSIFIER}} </li> <li>url = {{ lFILE.url }}</li><li>path = {{ lFILE.path }}</li></td> {%- endcomment -%}
+    <td><li>depth = {{lFILE_DEPTH}} | title = {{ lFILE.title }} | type = {{lSTOPIC_CLASSIFIER}} </li> <li>url = {{ lFILE.url }}</li><li>path = {{ lFILE.path }}</li></td>
   </tr>
   {% endif %}
   {% endunless %}
