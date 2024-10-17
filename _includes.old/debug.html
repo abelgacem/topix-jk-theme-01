@@ -1,0 +1,48 @@
+
+<h1>Debug</h1>
+
+<h2>string and string array</h2>
+
+<ul>
+  <li>gvTOPIC_PATH           = {{gvTOPIC_PATH}}</li>
+  <li>gvTOPIC_CATEGORY       = {{gvTOPIC_CATEGORY}}</li>
+  <li>gvTOPIC_SECTION        = {{gvTOPIC_SECTION}}</li>
+  <li>gvTOPIC_NAME           = {{gvTOPIC_NAME}}</li>
+  <li>gvLIST_CATEGORY_NAME   = {{gvLIST_CATEGORY_NAME | split: ','}}</li>
+  <li>gvLIST_CATEGORY_OBJECT = {{{{gvLIST_CATEGORY_OBJECT}}}}</li>
+  
+</ul>
+
+<h2>object array</h2>
+<li>gvLIST_CATEGORY_OBJECT</li>
+
+
+
+
+<h3>ppretty display an array (of categories)</h3>
+<ul>
+  <li>lLIST_CATEGORY = {{lLIST_CATEGORY | split: "/"}}</li>
+</ul>
+
+<h3>loop through an array (of categories)</h3>
+<p>method</p>
+<ul>
+  {% for lCATEGORY in lLIST_CATEGORY %}
+    <li>{{ lCATEGORY }}</li>
+  {% endfor %}
+</ul>
+<p>method</p>
+<ul>
+  {% for lCATEGORY in site.collections %}
+  {% unless lCATEGORY.label == "posts" %}
+    {% assign unless lCATEGORY.label == "posts" %}
+    {% assign lCATEGORY_NAME = lCATEGORY.label | capitalize %}
+    <li>{{ lCATEGORY.label }}</li>
+  {% endunless %}
+  {% endfor %}
+</ul>
+
+
+
+
+

@@ -1,0 +1,20 @@
+<!-- deine var  -->
+{%- include lib.get.list.category.name.html -%} 
+
+<h1>Browse by categories</h1>
+
+<div class="container">
+<div class="row">
+  
+{% for lCATEGORY_NAME in gvLIST_CATEGORY %}
+  <div class="col-6 col-md-3 text-center mb-4">
+  <div class="icon-container">
+  <a href="{{ site.baseurl }}/{{ lCATEGORY_NAME }}/index.html">
+  <img src="{{ '/assets/icons/' | append: lCATEGORY_NAME | append: '.svg' }}" alt="{{ lCATEGORY_NAME }} icon" class="img-fluid" style="width: 100px; height: 100px;">
+  <p class="mt-2">{{ lCATEGORY_NAME | capitalize }}</p>
+  </a>
+  </div>
+  </div>
+{% endfor %}
+</div>
+</div> 
