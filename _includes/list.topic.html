@@ -18,7 +18,7 @@
 {% assign lFILE_DEPTH  = lFILE.path | split: '/' | size | minus: 2 %}
 {% assign lFILE_FOLDER = lFILE.path | split: '/' | slice: 1, 1 | first | downcase | strip %}
 {% assign lTOPIC_NAME  = lFILE.path | split: '/' | slice: 2, 1 | first | downcase | strip %}
-{% assign lSTOPIC_CLASSIFIER = lFILE.path | split: '/' | slice: 3, 1 | first | downcase | strip %}
+{% assign lSTOPIC_CLASSIFIER = lFILE.path | split: '/' | slice: 3, 1 | first | downcase | strip | remove '.md' %}
 {% assign lFILE_EXPECTED = lTOPIC_NAME | append: '.md' %}
 {% unless lFILE.name == 'index.md' and lFILE_DEPTH == 0  %} 
 {% if  lFILE_DEPTH == 2  or lSTOPIC_CLASSIFIER == 'whatis' and lFILE.name == lFILE_EXPECTED %}
