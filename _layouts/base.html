@@ -19,6 +19,12 @@
 <main>
 <!-- useful content -->
 {{ content }}
+
+<!-- list -->
+{% if page.list %}
+{%- include {{ page.list }} -%}
+{% endif %}
+
 </main>
 
 <!-- site.footer -->
