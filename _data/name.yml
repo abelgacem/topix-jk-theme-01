@@ -1,5 +1,6 @@
 # name@section
 ##
+class:        "Class"          # category, kind, type, subset
 example:      "Example"
 introduction: "Introduction"
 definition:   "Definition"
