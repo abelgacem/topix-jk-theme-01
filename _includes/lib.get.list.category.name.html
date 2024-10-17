@@ -1,11 +1,11 @@
 
 <!-- declare variables -->
-{% assign gvLIST_CATEGORY = "" | split: ','%}
+{% assign lLIST_CATEGORY_NAME = "" | split: ','%}
 
-<!-- define array of categories -->
+<!-- define variable -->
 {% for lCATEGORY in site.collections %}
   {% unless lCATEGORY.label == "posts" %}
-  {% assign gvLIST_CATEGORY = gvLIST_CATEGORY | push: lCATEGORY.label %}
+  {% assign lLIST_CATEGORY_NAME = lLIST_CATEGORY_NAME | push: lCATEGORY.label %}
   {% endunless %}
 {% endfor %}
 

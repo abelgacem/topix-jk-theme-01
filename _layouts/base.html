@@ -13,11 +13,18 @@
 
 <!-- breadcrumb -->
 {% if page.breadcrumb %}
-{%- include base.header.html -%}
+{%- include page.breadcrumb -%}
 {% endif %}
 
 <!-- useful content -->
+<main>
 {{ content }}
+</main>
+
+<!-- list -->
+{% if page.list %}
+{%- include page.list -%}
+{% endif %}
 
 <!-- site.footer -->
 {%- include base.footer.html -%}

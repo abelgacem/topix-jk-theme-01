@@ -1,7 +1,14 @@
-<!-- deine var  -->
-{%- include lib.get.list.category.name.html -%} 
+<!-- declare variables -->
+{% assign lLIST_CATEGORY_NAME = "" | split: ','%}
 
-<h1>Browse by categories</h1>
+<!-- define variable -->
+{% for lCATEGORY in site.collections %}
+  {% unless lCATEGORY.label == "posts" %}
+  {% assign lLIST_CATEGORY_NAME = lLIST_CATEGORY_NAME | push: lCATEGORY.label %}
+  {% endunless %}
+{% endfor %}
+
+<h1>Browse categories</h1>
 
 <div class="container">
 <div class="row">
