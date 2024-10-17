@@ -5,16 +5,13 @@
 {% assign lTOPIC_DESC        =  page.mx.description  %} 
 {% assign lSTOPIC_CLASSIFIER =  page.path | split: '/' | slice: 3, 1 | first  | strip  %} 
 
-<!-- code -->
-<nav aria-label="breadcrumb">
-  <ul class="breadcrumb">
-    <li><a href="/" translate='no'>Home</a></li>
-    <li translate='no'>{{ lTOPIC_DOMAIN  }}</li>
-    <li translate='no'><a href='/{{ lTOPIC_CATEGORY }}/index.html'>{{ lTOPIC_CATEGORY }}<a></li>
-    <li>{{ lSTOPIC_CLASSIFIER }}</li>
-    <li translate='no'>{{ lTOPIC_NAME }} ({{ lTOPIC_DESC }})</li>
-  </ul>
-</nav>
+<ul class="breadcrumb">
+  <li><a href="/" translate='no'>Home</a></li>
+  <li translate='no'>{{ lTOPIC_DOMAIN  }}</li>
+  <li translate='no'><a href='/{{ lTOPIC_CATEGORY }}/index.html'>{{ lTOPIC_CATEGORY }}<a></li>
+  <li>{{ lSTOPIC_CLASSIFIER }}</li>
+  <li translate='no'>{{ lTOPIC_NAME }} ({{ lTOPIC_DESC }})</li>
+</ul>
 
 <!-- 
 <li translate='no'>{{ page.path | split: "/" | slice: 1, 1 | first | downcase | strip % }}</li> 

@@ -2,5 +2,11 @@
 layout: base
 ---
 
-{{ content }}   
-{%- include list.topic.html -%}
+<nav aria-label="breadcrumb">
+{%- include breadcrumb.category.html -%}
+</nav>
+
+<main>
+{{ content }}
+{%- include list.category.html -%}
+</main>

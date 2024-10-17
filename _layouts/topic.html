@@ -1,7 +1,14 @@
 ---
 layout: base
-breadcrumb: breadcrumb.topic.html
 ---
 
-{{ content }}   
+<nav aria-label="breadcrumb">
+{%- include breadcrumb.topic.html -%}
+</nav>
+
+<main>
+{{ content }}
+{%- include list.stopic.html -%}
+</main>
+
 

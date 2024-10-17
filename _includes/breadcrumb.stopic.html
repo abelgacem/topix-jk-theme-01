@@ -6,16 +6,14 @@
 {% assign lSTOPIC_NAME       =  page.path | split: '/' | last | remove: '.md' %}
 
 <!-- code -->
-<nav aria-label="breadcrumb">
-  <ul class="breadcrumb">
-    <li><a href="/" translate='no'>Home</a></li>
-    <li translate='no'>{{ lTOPIC_DOMAIN  }}</li>
-    <li translate='no'><a href='/{{ lTOPIC_CATEGORY }}/index.html'>{{ lTOPIC_CATEGORY }}<a></li>
-    <li><a href='/{{ lTOPIC_CATEGORY }}/'>{{ lTOPIC_NAME }}</a></li>
-    <li>{{ lSTOPIC_CLASSIFIER }}</li>
-    <li translate='no'>{{ lSTOPIC_NAME }}</li>
-  </ul>
-</nav>
+<ul class="breadcrumb">
+  <li><a href="/" translate='no'>Home</a></li>
+  <li translate='no'>{{ lTOPIC_DOMAIN  }}</li>
+  <li translate='no'><a href='/{{ lTOPIC_CATEGORY }}/index.html'>{{ lTOPIC_CATEGORY }}<a></li>
+  <li><a href='/{{ lTOPIC_CATEGORY }}/'>{{ lTOPIC_NAME }}</a></li>
+  <li>{{ lSTOPIC_CLASSIFIER }}</li>
+  <li translate='no'>{{ lSTOPIC_NAME }}</li>
+</ul>
 
 <!-- 
 <li translate='no'>{{ page.path | split: "/" | slice: 1, 1 | first | downcase | strip % }}</li> 

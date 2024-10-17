@@ -1,10 +1,8 @@
-<nav aria-label="breadcrumb">
-  <ul class="breadcrumb">
-    <li><a href="/" translate='no'>Home</a></li>
-    <li translate='no'>{{ site.mx.domain  }}</li>
-    <li translate='no'>{{ page.collection }}</li>
-  </ul>
-</nav>
+<ul class="breadcrumb">
+  <li><a href="/" translate='no'>Home</a></li>
+  <li translate='no'>{{ site.mx.domain  }}</li>
+  <li translate='no'>{{ page.collection }}</li>
+</ul>
 
 <!-- 
 <li translate='no'>{{ page.path | split: "/" | slice: 1, 1 | first | downcase | strip % }}</li> 
