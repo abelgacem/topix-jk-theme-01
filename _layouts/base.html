@@ -21,8 +21,13 @@
 {{ content }}
 
 <!-- list -->
-{%- include page.list -%}
-
+{% if page.list == "domain" %}
+  {%- include list.category.html -%}
+{% elsif page.list == "category" %}
+  {%- include list.topic.html -%}
+{% elsif page.list == "topic" %}
+  {%- include list.stopic.html -%}
+{% endif %}
 </main>
 
 <!-- site.footer -->
