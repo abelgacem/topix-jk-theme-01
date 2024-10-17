@@ -16,15 +16,16 @@
 {%- include page.breadcrumb -%}
 {% endif %}
 
-<!-- useful content -->
 <main>
+<!-- useful content -->
 {{ content }}
-</main>
 
-<!-- list -->
+<!-- list members -->
 {% if page.list %}
 {%- include page.list -%}
 {% endif %}
+
+</main>
 
 <!-- site.footer -->
 {%- include base.footer.html -%}
