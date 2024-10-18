@@ -1,27 +1,28 @@
-<!-- declare variables -->
-{% assign lLIST_CATEGORY_NAME = "" | split: ','%}
 
-<!-- define variable -->
+<!-- define and define variable -->
+{% assign lLIST_CATEGORY_NAME = "" | split: ','%}
 {% for lCATEGORY in site.collections %}
-  {% unless lCATEGORY.label == "posts" %}
-  {% assign lLIST_CATEGORY_NAME = lLIST_CATEGORY_NAME | push: lCATEGORY.label %}
-  {% endunless %}
+{% unless lCATEGORY.label == "posts" %}
+{% assign lLIST_CATEGORY_NAME = lLIST_CATEGORY_NAME | push: lCATEGORY.label %}
+{% endunless %}
 {% endfor %}
 
 <h1>Browse categories</h1>
 
 <div class="container">
-<div class="row">
-  
-{% for lCATEGORY_NAME in lLIST_CATEGORY_NAME %}
-  <div class="col-6 col-md-3 text-center mb-4">
-  <div class="icon-container">
-  <a href="{{ site.baseurl }}/{{ lCATEGORY_NAME }}/index.html">
-  <img src="{{ '/assets/icons/' | append: lCATEGORY_NAME | append: '.svg' }}" alt="{{ lCATEGORY_NAME }} icon" class="img-fluid" style="width: 100px; height: 100px;">
-  <p class="mt-2">{{ lCATEGORY_NAME | capitalize }}</p>
-  </a>
-  </div>
-  </div>
-{% endfor %}
+<div class="row">    
+  {% for lCATEGORY_NAME in lLIST_CATEGORY_NAME %}
+    <!-- declare and define variables -->
+    {% assign lCATEGORY_ICON_PATH = '/assets/icons/' | append: lCATEGORY_NAME | append: '.svg' %}
+    {% assign lCATEGORY_URL       = site.baseurl | append: '/' | append: lCATEGORY_NAME  %}
+    <div class="col-6 col-md-3 text-center mb-4">
+      <div class="icon-container">
+        <a href="{{ lCATEGORY_URL }}">
+        <img src="{{ lCATEGORY_ICON_PATH }}" alt="{{ lCATEGORY_NAME }} icon" class="img-fluid" style="width: 100px; height: 100px;">
+        <p class="mt-2">{{ lCATEGORY_NAME | capitalize }}</p>
+        </a>
+      </div>
+    </div>
+  {% endfor %}
 </div>
 </div> 
