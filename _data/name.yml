@@ -1,5 +1,6 @@
 # name@section
 ##
+operation:    "Operation"      # action, manage, task
 class:        "Class"          # category, kind, type, subset
 example:      "Example"
 introduction: "Introduction"
