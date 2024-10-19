@@ -4,6 +4,7 @@
 {% assign lLIST_REFERENCE = page.mx.ref %}
 {% assign lTOPIC_NAME     = lFILE_PATH | split: '/' | slice: 2 | first | downcase | strip %}
 
+{% if lLIST_REFERENCE %}
 <h1 id='list_stopic'><span translation='no'>{{ lTOPIC_NAME }} meta reference</h1>
 
   <div class="container my-4">
@@ -37,6 +38,7 @@
      </tbody>
   </table>
 </div>
+{% endif %}
       
 
 
