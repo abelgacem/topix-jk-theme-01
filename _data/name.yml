@@ -12,6 +12,9 @@ toknow:       "Good to know"
 contributor:  "Contributor"
 lexicalfield: "Lexical field"
 ##
+reference:    "Reference"
+contributor:  "Contributor"
+##
 improvement:  "Improvement"
 ##
 member:       "Member"
@@ -19,9 +22,6 @@ list:         "List"
 ##
 process:      "Process"
 requirement:  "Requirement"
-##
-reference:    "Reference"
-contributor:  "Contributor"
 
 # other
 ##
@@ -41,7 +41,7 @@ poc:          "proof of concepts"
 ##
 sdef:         "define by the system"
 udef:         "define by the user"
-## latin; en
+## latin, en
 ie:           "ie."
 etc:          "etc."
 eg:           "eg."
