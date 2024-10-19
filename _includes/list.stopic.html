@@ -27,7 +27,7 @@
 
 <div class="container my-4">
 <!-- Tab Navigation -->
-<ul class="nav nav-tabs" id="myTab" role="tablist">
+<ul class="nav nav-pills" id="myTab" role="tablist">
   {% for lCLASSIFIER in lIST_CLASSIFIER %}
     <li class="nav-item" role="presentation"> 
     <button class="nav-link {% if forloop.first %}active{% endif %}" id="{{ lCLASSIFIER }}-tab" data-bs-toggle="tab" data-bs-target="#{{ lCLASSIFIER }}" type="button" role="tab" aria-controls="{{ lCLASSIFIER }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}">{{ lCLASSIFIER | capitalize }}</button>
