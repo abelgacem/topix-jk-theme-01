@@ -1,4 +1,5 @@
 <!-- declare and define var -->
+{% assign lFILE_PATH      = page.path %}
 {% assign lLIST_CATEGORY  = site.collections | where_exp: 'collection', 'collection.label != "posts"' %}
 {% assign lLIST_REFERENCE = page.mx.ref %}
 {% assign lTOPIC_NAME     = lFILE_PATH | split: '/' | slice: 2 | first | downcase | strip %}
