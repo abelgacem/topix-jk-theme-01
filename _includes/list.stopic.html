@@ -46,6 +46,7 @@
               <tr>
                 <th>name</th>
                 <th>class</th>
+                <th>trail</th>
                 <th>description</th>
               </tr>
             </thead>
@@ -65,10 +66,12 @@
                   {% assign lSTOPIC_FILE_PATH   = lFILE.path   %}
                   {% assign lSTOPIC_URL         = lFILE.url    %}
                   {% assign lSTOPIC_NAME        = lFILE.title  %}
-                  {% assign lSTOPIC_DESCRIPTION = lFILE.mx.description  %}
+                  {% assign lSTOPIC_TRAIL       = lFILE.mx.trail       %}
+                  {% assign lSTOPIC_DESCRIPTION = lFILE.mx.description %}
                   <tr>
                     <td><a href="{{ lSTOPIC_URL }}" class="text-primary">{{ lSTOPIC_NAME }}</a></td>
                     <td>{{ lSTOPIC_CLASSIFIER }}</td>
+                    <td>{{ lSTOPIC_TRAIL }}</td>
                     <td>{{ lSTOPIC_DESCRIPTION }}</td>
                   </tr>
                 {% endif %}
