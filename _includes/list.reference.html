@@ -13,6 +13,7 @@
       <tr>
         <th>name</th>
         <th>class</th>
+        <th>category</th>
         <th>description</th>
       </tr>
     </thead>
@@ -25,10 +26,12 @@
         {% for lCATEGORY in lLIST_CATEGORY %}
           {% for lDOC in lCATEGORY.docs %}
             {% if lDOC.path contains lREF_FILENAME %}
-              {% assign lDOC_DESCRIPTION = lDOC.mx.description  %}
+              {% assign lDOC_DESCRIPTION  = lDOC.mx.description  %}
+              {% assign lDOC_CATEGORY     = lDOC.collection  %}
               <tr>
                 <td><a href='{{ lDOC.url }}'>{{lREF_TOPIC_NAME}}</a></td>
                 <td>{{lREF_TOPIC_CLASSIFIER}}</td>
+                <td><a href='/{{ lDOC_CATEGORY }}'>{{lDOC_CATEGORY}}</a></td>
                 <td>{{lDOC_DESCRIPTION}}</td>
               </tr>
             {% endif %}
