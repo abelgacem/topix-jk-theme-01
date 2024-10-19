@@ -17,8 +17,9 @@ function setCookie(key, value, expiry) {
 
 // setCookie('googtrans', '/en/fr',1)
 
-setCookie("googtrans", "en/fr", time()-3600,'/','');
-setCookie("googtrans", "en/fr", time()-3600,'/','.domain.com');
+// setCookie("googtrans", "en/fr", time()-3600,'/','');
+// setCookie("googtrans", "en/fr", time()-3600,'/','.domain.com');
+setCookie("googtrans", "en/fr", -1);
 
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({
