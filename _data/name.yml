@@ -27,6 +27,7 @@ requirement:  "Requirement"
 # other
 ##
 gui:          " `GUI.` "
+tag:          " `tag` "
 
 # name@common
 ## domain
