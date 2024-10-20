@@ -1,15 +1,15 @@
 <!-- declare and define var -->
-{% assign lFILE_PATH      = page.path %}
-{% assign lTOPIC_DOMAIN   = site.mx.domain %}
-{% assign lTOPIC_CATEGORY = page.collection %}
-{% assign lTOPIC_CATEGORY_URL = '/' | append: lTOPIC_CATEGORY | append: '/' | append: 'index.html' %}
-{% assign lTOPIC_NAME         =  lFILE_PATH | split: '/' | slice: 2 | first | capitalize | strip  %} 
-{% assign lSTOPIC_CLASSIFIER  =  lFILE_PATH | split: '/' | slice: 3 | first  | capitalize | strip  | remove: '.md'%} 
+{% assign lFILE_PATH             = page.path %}
+{% assign lTOPIC_DOMAIN          = site.mx.domain %}
+{% assign lTOPIC_CATEGORY        = page.collection %}
+{% assign lTOPIC_CATEGORY_URL    = '/' | append: lTOPIC_CATEGORY | append: '/' | append: 'index.html' %}
+{% assign lTOPIC_NAME            =  lFILE_PATH | split: '/' | slice: 2 | first | capitalize | strip  %} 
+{% assign lSTOPIC_CLASSIFIER     =  lFILE_PATH | split: '/' | slice: 3 | first  | capitalize | strip  | remove: '.md'%} 
 
 <ul class='breadcrumb'>
   <li><a href='/'' translate='no'>Home</a></li>
   <li translate='no'>{{ lTOPIC_DOMAIN  }}</li>
   <li translate='no'><a href='{{ lTOPIC_CATEGORY_URL }}'>{{ lTOPIC_CATEGORY }}<a></li>
-  <li>{{ lSTOPIC_CLASSIFIER }}</li>
+  <li><a href='#{{lSTOPIC_CLASSIFIER}}'>{{ lSTOPIC_CLASSIFIER }}</a></li>
   <li translate='no'>{{ lTOPIC_NAME }}</li>
 </ul>
