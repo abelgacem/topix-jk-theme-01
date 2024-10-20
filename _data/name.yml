@@ -20,6 +20,7 @@ improvement:  "Improvement"
 member:       "Member"
 list:         "List"
 ##
+step:         "Step"
 process:      "Process"
 requirement:  "Requirement"
 
