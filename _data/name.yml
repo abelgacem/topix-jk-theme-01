@@ -13,9 +13,8 @@ contributor:  "Contributor"
 lexicalfield: "Lexical field"
 ##
 reference:    "Reference"
-contributor:  "Contributor"
-##
 improvement:  "Improvement"
+##
 ##
 member:       "Member"
 list:         "List"
@@ -23,7 +22,6 @@ list:         "List"
 step:         "Step"
 process:      "Process"
 requirement:  "Requirement"
-
 # other
 ##
 gui:          " `GUI.` "
