@@ -11,6 +11,7 @@ todo:         "TODO"
 toknow:       "Good to know"
 contributor:  "Contributor"
 lexicalfield: "Lexical field"
+usecase:      "Use case"
 ##
 reference:    "Reference"
 improvement:  "Improvement"
@@ -43,7 +44,9 @@ sdef:         "define by the system"
 udef:         "define by the user"
 ## latin, en
 ie:           "ie."
+ie:           "ie."
 etc:          "etc."
 eg:           "eg."
+sa:           "such as"
 aka:          "aka."
 
