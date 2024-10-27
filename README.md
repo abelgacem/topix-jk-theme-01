@@ -1,5 +1,9 @@
+
+[//]: #(Reference)
+[tool_topix]:       https://github.com/abelgacem/topix-jk-site-it.git
+
 # topix-jk-theme-01
-A Jekyll theme for Tool Topix
+A Jekyll theme for [Topix][[tool_topix]]
 
 
 Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
