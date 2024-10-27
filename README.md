@@ -12,8 +12,8 @@ Welcome to the Jekyll theme for [Topix][tool_topix].
 - build the gem 
   ```shell
   lGEMSPEC_PATH="topix-jk-theme-01.gempspec"
-  lGEM_PATH="/tmp/$(basename ${lGEMSPEC_PATH}).gem"
-  gem build ${topix-jk-site-it} --output=${lGEM_PATH}
+  lGEM_PATH="/tmp/$(basename ${lGEMSPEC_PATH%%.*}).gem"
+  gem build ${lGEMSPEC_PATH} --output=${lGEM_PATH}
   ```
 ## install the gem into local ruby gem reposirory
 ```shell
