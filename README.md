@@ -5,25 +5,42 @@
 # topix-jk-theme-01
 Welcome to the Jekyll theme for [Topix][tool_topix].
 
-## Installation
+## Build the gem
+- install `ruby`
+- `git clone` this repository
+- `cd` to the repository folder
+- build the gem 
+  ```shell
+  lGEMSPEC_PATH="topix-jk-theme-01.gempspec"
+  lGEM_PATH="/tmp/$(basename ${lGEMSPEC_PATH}).gem"
+  gem build ${topix-jk-site-it} --output=${lGEM_PATH}
+  ```
+## install the gem into local ruby gem reposirory
+```shell
+lGEM_PATH="/tmp/topix-jk-theme-01.gem"
+gem install ${lGEM_PATH}
+```
+
+## Check Installation
+```shell
+gem list
+```
+
+## use this gem as a Jekyll theme
 
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "mxjkth01"
+gem "topix-jk-theme-01"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: mxjkth01
+theme: topix-jk-theme-01
 ```
 
 And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install mxjkth01
-
+```
+$ bundle
+```
