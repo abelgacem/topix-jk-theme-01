@@ -13,6 +13,8 @@ contributor:  "Contributor"
 lexicalfield: "Lexical field"
 usecase:      "Use case"
 install:      "Install"
+bestpractice: "Best Practice"
+confile:      "Configuration File"
 ##
 reference:    "Reference"
 improvement:  "Improvement"
