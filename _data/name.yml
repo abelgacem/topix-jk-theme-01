@@ -1,21 +1,22 @@
 # name@section
 ##
-operation:    "Operation"      # action, manage, task
+bestpractice: "Best Practice"
 class:        "Class"          # category, kind, type, subset
-example:      "Example"
-introduction: "Introduction"
+confile:      "Configuration File"
+configuration: "Configuration"
+contributor:  "Contributor"
 definition:   "Definition"
 description:  "Description"
+example:      "Example"
+howto:        "How to"
+install:      "Install"
+introduction: "Introduction"
+lexicalfield: "Lexical field"
+operation:    "Operation"      # action, manage, task
 purpose:      "Purpose"
 todo:         "TODO"
 toknow:       "Good to know"
-howto:        "How to"
-contributor:  "Contributor"
-lexicalfield: "Lexical field"
 usecase:      "Use case"
-install:      "Install"
-bestpractice: "Best Practice"
-confile:      "Configuration File"
 ##
 reference:    "Reference"
 improvement:  "Improvement"
@@ -48,9 +49,7 @@ sdef:         "define by the system"
 udef:         "define by the user"
 ## latin, en
 ie:           "ie."
-ie:           "ie."
 etc:          "etc."
 eg:           "eg."
 sa:           "such as"
 aka:          "aka."
-
