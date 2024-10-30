@@ -40,6 +40,7 @@ it:           "IT."
 ## language
 html:         " `HTML.` "
 ## name@acronym
+lib:          "Library"
 kvpair:       "key value pairs"
 kpi:          "key process indicators"
 poc:          "proof of concepts"
@@ -48,6 +49,7 @@ poc:          "proof of concepts"
 sdef:         "define by the system"
 udef:         "define by the user"
 ## latin, en
+cf:           "cf."
 ie:           "ie."
 etc:          "etc."
 eg:           "eg."
